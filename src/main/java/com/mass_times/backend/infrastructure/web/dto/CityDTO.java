@@ -1,4 +1,4 @@
-package com.mass_times.backend.infrastructure.web.dto.city;
+package com.mass_times.backend.infrastructure.web.dto;
 
 import lombok.Data;
 

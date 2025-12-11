@@ -1,6 +1,6 @@
 package com.mass_times.backend.infrastructure.web.controller.parish;
 
-import com.mass_times.backend.infrastructure.web.dto.parish.ParishDTO;
+import com.mass_times.backend.infrastructure.web.dto.ParishDTO;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

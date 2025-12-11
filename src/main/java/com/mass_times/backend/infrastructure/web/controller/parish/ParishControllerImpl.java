@@ -5,7 +5,7 @@ import com.mass_times.backend.application.port.in.parish.GetParishByIdUseCase;
 import com.mass_times.backend.application.port.in.parish.ListParishesUseCase;
 import com.mass_times.backend.application.port.in.parish.SaveParishUseCase;
 import com.mass_times.backend.application.port.in.parish.UpdateParishUseCase;
-import com.mass_times.backend.infrastructure.web.dto.parish.ParishDTO;
+import com.mass_times.backend.infrastructure.web.dto.ParishDTO;
 import com.mass_times.backend.infrastructure.web.mapper.ParishMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,5 +1,6 @@
-package com.mass_times.backend.infrastructure.web.dto.event;
+package com.mass_times.backend.infrastructure.web.dto;
 
+import com.mass_times.backend.domain.model.event.EventType;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -10,6 +11,6 @@ public class EventDTO {
     private Long parishId;
     private String name;
     private String description;
-    private EventTypeDTO type;
+    private EventType type;
     private LocalDateTime dateTime;
 }

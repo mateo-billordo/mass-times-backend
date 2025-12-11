@@ -5,7 +5,7 @@ import com.mass_times.backend.application.port.in.city.GetCityByIdUseCase;
 import com.mass_times.backend.application.port.in.city.ListCitiesUseCase;
 import com.mass_times.backend.application.port.in.city.SaveCityUseCase;
 import com.mass_times.backend.application.port.in.city.UpdateCityUseCase;
-import com.mass_times.backend.infrastructure.web.dto.city.CityDTO;
+import com.mass_times.backend.infrastructure.web.dto.CityDTO;
 import com.mass_times.backend.infrastructure.web.mapper.CityMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;

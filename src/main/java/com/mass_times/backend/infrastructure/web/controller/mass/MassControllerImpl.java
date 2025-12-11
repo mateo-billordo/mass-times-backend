@@ -5,7 +5,7 @@ import com.mass_times.backend.application.port.in.mass.GetMassByIdUseCase;
 import com.mass_times.backend.application.port.in.mass.ListMassesUseCase;
 import com.mass_times.backend.application.port.in.mass.SaveMassUseCase;
 import com.mass_times.backend.application.port.in.mass.UpdateMassUseCase;
-import com.mass_times.backend.infrastructure.web.dto.mass.MassDTO;
+import com.mass_times.backend.infrastructure.web.dto.MassDTO;
 import com.mass_times.backend.infrastructure.web.mapper.MassMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;

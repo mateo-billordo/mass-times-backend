@@ -5,7 +5,7 @@ import com.mass_times.backend.application.port.in.event.GetEventByIdUseCase;
 import com.mass_times.backend.application.port.in.event.ListEventsUseCase;
 import com.mass_times.backend.application.port.in.event.SaveEventUseCase;
 import com.mass_times.backend.application.port.in.event.UpdateEventUseCase;
-import com.mass_times.backend.infrastructure.web.dto.event.EventDTO;
+import com.mass_times.backend.infrastructure.web.dto.EventDTO;
 import com.mass_times.backend.infrastructure.web.mapper.EventMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;

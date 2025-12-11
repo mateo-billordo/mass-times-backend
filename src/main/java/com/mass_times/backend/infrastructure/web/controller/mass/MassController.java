@@ -1,6 +1,6 @@
 package com.mass_times.backend.infrastructure.web.controller.mass;
 
-import com.mass_times.backend.infrastructure.web.dto.mass.MassDTO;
+import com.mass_times.backend.infrastructure.web.dto.MassDTO;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

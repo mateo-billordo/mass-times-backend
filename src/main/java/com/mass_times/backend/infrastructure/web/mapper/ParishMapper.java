@@ -1,7 +1,7 @@
 package com.mass_times.backend.infrastructure.web.mapper;
 
 import com.mass_times.backend.domain.model.parish.ParishBO;
-import com.mass_times.backend.infrastructure.web.dto.parish.ParishDTO;
+import com.mass_times.backend.infrastructure.web.dto.ParishDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

@@ -1,5 +1,6 @@
-package com.mass_times.backend.infrastructure.web.dto.mass;
+package com.mass_times.backend.infrastructure.web.dto;
 
+import com.mass_times.backend.domain.model.mass.MassType;
 import lombok.Data;
 
 import java.time.DayOfWeek;
@@ -11,5 +12,5 @@ public class MassDTO {
     private Long parishId;
     private DayOfWeek dayOfWeek;
     private LocalTime time;
-    private MassTypeDTO type;
+    private MassType type;
 }

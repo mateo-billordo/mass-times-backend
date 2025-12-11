@@ -1,7 +1,7 @@
 package com.mass_times.backend.infrastructure.web.mapper;
 
 import com.mass_times.backend.domain.model.city.CityBO;
-import com.mass_times.backend.infrastructure.web.dto.city.CityDTO;
+import com.mass_times.backend.infrastructure.web.dto.CityDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;
