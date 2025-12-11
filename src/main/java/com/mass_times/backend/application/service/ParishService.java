@@ -1,6 +1,5 @@
 package com.mass_times.backend.application.service;
 
-import com.mass_times.backend.application.port.in.parish.DeleteAllParishesUseCase;
 import com.mass_times.backend.application.port.in.parish.DeleteParishByIdUseCase;
 import com.mass_times.backend.application.port.in.parish.GetParishByIdUseCase;
 import com.mass_times.backend.application.port.in.parish.ListParishesUseCase;
@@ -18,7 +17,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class ParishService implements GetParishByIdUseCase, ListParishesUseCase,
         SaveParishUseCase, UpdateParishUseCase,
-        DeleteParishByIdUseCase, DeleteAllParishesUseCase {
+        DeleteParishByIdUseCase {
 
     private ParishPort parishPort;
 
@@ -45,10 +44,5 @@ public class ParishService implements GetParishByIdUseCase, ListParishesUseCase,
     @Override
     public void deleteById(Long id) {
         parishPort.deleteById(id);
-    }
-
-    @Override
-    public void deleteAll() {
-        parishPort.deleteAll();
     }
 }

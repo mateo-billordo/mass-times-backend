@@ -16,6 +16,4 @@ public interface ParishPort {
     ParishBO update(ParishBO parishBO);
 
     void deleteById(Long id);
-
-    void deleteAll();
 }
