@@ -6,7 +6,7 @@ import com.mass_times.backend.application.port.in.parish.ListParishesUseCase;
 import com.mass_times.backend.application.port.in.parish.SaveParishUseCase;
 import com.mass_times.backend.application.port.in.parish.UpdateParishUseCase;
 import com.mass_times.backend.application.port.out.ParishPort;
-import com.mass_times.backend.domain.model.ParishBO;
+import com.mass_times.backend.domain.model.parish.ParishBO;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -37,7 +37,7 @@ public class ParishService implements GetParishByIdUseCase, ListParishesUseCase,
     }
 
     @Override
-    public ParishBO updateParish(ParishBO parishBO) {
+    public ParishBO update(ParishBO parishBO) {
         return parishPort.update(parishBO);
     }
 

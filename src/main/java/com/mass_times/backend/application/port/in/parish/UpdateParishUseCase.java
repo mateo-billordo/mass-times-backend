@@ -1,8 +1,8 @@
 package com.mass_times.backend.application.port.in.parish;
 
-import com.mass_times.backend.domain.model.ParishBO;
+import com.mass_times.backend.domain.model.parish.ParishBO;
 
 public interface UpdateParishUseCase {
 
-    ParishBO updateParish(ParishBO parishBO);
+    ParishBO update(ParishBO parishBO);
 }

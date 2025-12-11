@@ -1,6 +1,6 @@
-package com.mass_times.backend.infrastructure.web.controller.parish;
+package com.mass_times.backend.infrastructure.web.controller.mass;
 
-import com.mass_times.backend.infrastructure.web.dto.parish.ParishDTO;
+import com.mass_times.backend.infrastructure.web.dto.mass.MassDTO;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,21 +11,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@RequestMapping("/parish")
-public interface ParishController {
+@RequestMapping("/mass")
+public interface MassController {
 
     @GetMapping("/{id}")
-    ParishDTO getParishById(@PathVariable("id") Long parishId);
+    MassDTO getMassById(@PathVariable("id") Long massId);
 
     @GetMapping("/all")
-    List<ParishDTO> getAllParishes();
+    List<MassDTO> getAllMasses();
 
     @PostMapping
-    ParishDTO saveParish(@RequestBody ParishDTO parishDTO);
+    MassDTO saveMass(@RequestBody MassDTO massDTO);
 
     @PutMapping
-    ParishDTO updateParish(@RequestBody ParishDTO parishDTO);
+    MassDTO updateMass(@RequestBody MassDTO massDTO);
 
     @DeleteMapping("/{id}")
-    void deleteParishById(@PathVariable("id") Long parishId);
+    void deleteMassById(@PathVariable("id") Long massId);
 }

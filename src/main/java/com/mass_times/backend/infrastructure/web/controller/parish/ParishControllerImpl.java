@@ -23,26 +23,26 @@ public class ParishControllerImpl implements ParishController {
     private GetParishByIdUseCase getParishByIdUseCase;
     private ListParishesUseCase listParishesUseCase;
     private SaveParishUseCase saveParishUseCase;
-    private DeleteParishByIdUseCase deleteParishByIdUseCase;
     private UpdateParishUseCase updateParishUseCase;
+    private DeleteParishByIdUseCase deleteParishByIdUseCase;
 
     @Override
     public ParishDTO getParishById(Long parishId) {
         return getParishByIdUseCase.getParishById(parishId)
-                .map(parishMapper::toParishResponseDTO)
+                .map(parishMapper::toParishDTO)
                 .orElse(null);
 
     }
 
     @Override
     public List<ParishDTO> getAllParishes() {
-        return parishMapper.toParishResponseDTOList(
+        return parishMapper.toParishDTOList(
                 listParishesUseCase.listAllParishes());
     }
 
     @Override
     public ParishDTO saveParish(ParishDTO parishDTO) {
-        return parishMapper.toParishResponseDTO(
+        return parishMapper.toParishDTO(
                 saveParishUseCase.save(
                         parishMapper.toParishBO(parishDTO)
                 ));
@@ -50,8 +50,8 @@ public class ParishControllerImpl implements ParishController {
 
     @Override
     public ParishDTO updateParish(ParishDTO parishDTO) {
-        return parishMapper.toParishResponseDTO(
-                updateParishUseCase.updateParish(
+        return parishMapper.toParishDTO(
+                updateParishUseCase.update(
                         parishMapper.toParishBO(parishDTO)
                 ));
     }

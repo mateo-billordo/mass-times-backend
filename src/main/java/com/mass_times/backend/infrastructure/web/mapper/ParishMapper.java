@@ -1,6 +1,6 @@
 package com.mass_times.backend.infrastructure.web.mapper;
 
-import com.mass_times.backend.domain.model.ParishBO;
+import com.mass_times.backend.domain.model.parish.ParishBO;
 import com.mass_times.backend.infrastructure.web.dto.parish.ParishDTO;
 import org.mapstruct.Mapper;
 
@@ -13,7 +13,7 @@ public interface ParishMapper {
 
     List<ParishBO> toParishBOList(List<ParishDTO> parishDTOList);
 
-    ParishDTO toParishResponseDTO(ParishBO parishBO);
+    ParishDTO toParishDTO(ParishBO parishBO);
 
-    List<ParishDTO> toParishResponseDTOList(List<ParishBO> parishBOList);
+    List<ParishDTO> toParishDTOList(List<ParishBO> parishBOList);
 }

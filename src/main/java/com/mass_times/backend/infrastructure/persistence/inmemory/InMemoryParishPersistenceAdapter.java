@@ -1,7 +1,7 @@
 package com.mass_times.backend.infrastructure.persistence.inmemory;
 
 import com.mass_times.backend.application.port.out.ParishPort;
-import com.mass_times.backend.domain.model.ParishBO;
+import com.mass_times.backend.domain.model.parish.ParishBO;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
